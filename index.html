@@ -241,20 +241,28 @@
     }
     .flyer-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.2rem;
-      align-items: start;
+      grid-template-columns: repeat(2, minmax(280px, 1fr));
+      gap: 1.5rem;
+      align-items: stretch;
       margin-bottom: 1.5rem;
     }
-    .flyer-grid img {
+    .flyer-card {
       width: 100%;
-      height: auto;
-      max-height: none;
-      object-fit: contain;
-      border-radius: 20px;
+      aspect-ratio: 2 / 3;
       background: #080808;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 10px 22px rgba(0,0,0,0.14);
       border: 2px solid #D4AF37;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .flyer-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
     .therapist-card h4 {
       font-size: 1.3rem;
@@ -366,6 +374,30 @@
       color: #f3e5ab;
     }
 
+    .footer-content {
+      align-items: flex-start;
+    }
+    .footer-quick-links h4,
+    .footer-social h4 {
+      color: #D4AF37;
+      margin-bottom: 0.85rem;
+      font-size: 1.1rem;
+    }
+    .footer-quick-links ul {
+      list-style: none;
+      display: grid;
+      gap: 0.45rem;
+    }
+    .footer-quick-links a {
+      color: #eedfcf;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .footer-quick-links a:hover {
+      color: #D4AF37;
+      padding-left: 4px;
+    }
+
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -399,6 +431,13 @@
       }
       .contact-map {
         grid-template-columns: 1fr;
+      }
+      .flyer-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-content {
+        flex-direction: column;
+        text-align: left;
       }
       .section-title {
         font-size: 2rem;
@@ -510,8 +549,8 @@
       <div class="no-nails-note">
         <i class="fas fa-hand-sparkles"></i> <p>We do nails plus — Pure focus on therapeutic massage & wellness.</p><br>
         <div class="flyer-grid">
-          <img src="nails.jpeg" alt="Nail care price list flyer" onerror="this.src='https://placehold.co/600x900/f3eaf8/9B59B6?text=Nails+Flyer'">
-          <img src="martha13.jpg" alt="The Fiery Falcon Wellness Spa services flyer" onerror="this.src='https://placehold.co/600x900/f3eaf8/9B59B6?text=Spa+Flyer'">
+          <div class="flyer-card"><img src="nails.jpeg" alt="Nail care price list flyer" onerror="this.src='https://placehold.co/600x900/f3eaf8/9B59B6?text=Nails+Flyer'"></div>
+          <div class="flyer-card"><img src="martha13.jpg" alt="The Fiery Falcon Wellness Spa services flyer" onerror="this.src='https://placehold.co/600x900/f3eaf8/9B59B6?text=Spa+Flyer'"></div>
         </div>
       <div class="gallery-grid">
         <img src="martha1.jpg" alt="Spa atmosphere" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha1'">
@@ -531,10 +570,10 @@
     <div class="container">
       <div class="section-title">Our Healing Hands</div>
       <div class="therapists-row">
-        <div class="therapist-card"><img src="martha8.jpeg" alt="Therapist 1" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha8'"><h4>Elena N.</h4><p>Deep Tissue Expert</p></div>
-        <div class="therapist-card"><img src="marth9.jpeg" alt="Therapist 2" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha9'"><h4>Samuel K.</h4><p>Thai & Stretch</p></div>
-        <div class="therapist-card"><img src="martha10.jpeg" alt="Therapist 3" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha10'"><h4>Lerato M.</h4><p>Aroma & Hot Stone</p></div>
-        <div class="therapist-card"><img src="martha11.jpeg" alt="Therapist 4" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha11'"><h4>Priya D.</h4><p>Trigger Point Therapy</p></div>
+        <div class="therapist-card"><img src="martha8.jpeg" alt="Therapist 1" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha8'"><h4>Deep Tissue Expert</h4></div>
+        <div class="therapist-card"><img src="marth9.jpeg" alt="Therapist 2" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha9'"><h4>Thai & Stretch</h4></div>
+        <div class="therapist-card"><img src="martha10.jpeg" alt="Therapist 3" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha10'"><h4>Aroma & Hot Stone</h4></div>
+        <div class="therapist-card"><img src="martha11.jpeg" alt="Therapist 4" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha11'"><h4>Trigger Point Therapy</h4></div>
       </div>
     </div>
   </section>
@@ -590,11 +629,27 @@
       <p>Over a decade of authentic healing • Benoni's premium sanctuary - Call us on 27 69 951 2154</p>
       <p>© 2026 — All about tranquility</p>
     </div>
-    <div class="social-links">
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-      <a href="#" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-      <a href="#" aria-label="Tripadvisor"><i class="fab fa-tripadvisor"></i></a>
+
+    <div class="footer-quick-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#massages">Massages</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#therapists">Our Healing Hands</a></li>
+        <li><a href="#videoSection">Moments</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/27711705909" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" aria-label="Tripadvisor"><i class="fab fa-tripadvisor"></i></a>
+      </div>
     </div>
   </div>
 </footer>
