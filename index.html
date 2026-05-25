@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>The Fiery Falcon | Wellness Spa Benoni</title>
+  <title>The Fiery Falcon | Wellness Spa Benoni - Gold & Purple</title>
   <!-- Google Fonts + Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -18,8 +18,8 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: #fefcf5;
-      color: #2e241f;
+      background: #fefaf5;
+      color: #2e1e2c;
       scroll-behavior: smooth;
       line-height: 1.5;
     }
@@ -31,15 +31,15 @@
       padding: 0 24px;
     }
 
-    /* header / nav */
+    /* header / nav - purple & gold theme */
     header {
-      background: rgba(30, 20, 15, 0.85);
+      background: rgba(46, 25, 48, 0.92);
       backdrop-filter: blur(12px);
       position: sticky;
       top: 0;
       z-index: 100;
       padding: 16px 0;
-      border-bottom: 1px solid rgba(255,215,180,0.3);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.4);
     }
     .nav-bar {
       display: flex;
@@ -51,14 +51,14 @@
       font-size: 1.8rem;
       font-weight: 800;
       letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #F4A261, #E76F51);
+      background: linear-gradient(135deg, #D4AF37, #9B59B6);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
     .logo p {
       font-size: 0.75rem;
-      color: #f1dbb2;
+      color: #E6C87E;
       letter-spacing: 1px;
     }
     .nav-links {
@@ -68,17 +68,17 @@
     }
     .nav-links a {
       text-decoration: none;
-      color: #fff0e0;
+      color: #f7efcf;
       font-weight: 500;
       transition: 0.2s;
     }
     .nav-links a:hover {
-      color: #F4A261;
+      color: #D4AF37;
     }
     .menu-icon {
       display: none;
       font-size: 1.8rem;
-      color: #F4A261;
+      color: #D4AF37;
       cursor: pointer;
     }
 
@@ -102,7 +102,7 @@
       z-index: -1;
     }
     .hero-overlay {
-      background: rgba(0,0,0,0.5);
+      background: rgba(46, 25, 48, 0.55);
       width: 100%;
       height: 100%;
       display: flex;
@@ -117,17 +117,17 @@
     }
     .hero-content h2 {
       font-size: 3.2rem;
-      color: #fff5e6;
-      text-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+      color: #FFF2D7;
+      text-shadow: 2px 2px 12px rgba(0,0,0,0.6);
     }
     .hero-content p {
       font-size: 1.2rem;
-      color: #ffe6ce;
+      color: #FFEFC0;
       margin: 20px 0;
     }
     .btn {
       display: inline-block;
-      background: #E76F51;
+      background: #9B59B6;
       color: white;
       padding: 12px 28px;
       border-radius: 40px;
@@ -136,23 +136,25 @@
       transition: 0.3s;
       border: none;
       cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     .btn:hover {
-      background: #c75c3f;
+      background: #D4AF37;
+      color: #2e1e2c;
       transform: scale(1.02);
     }
 
     /* sections general */
     section {
       padding: 80px 0;
-      border-bottom: 1px solid #f0e3d4;
+      border-bottom: 1px solid #efe0fa;
     }
     .section-title {
       font-size: 2.5rem;
       font-weight: 700;
       text-align: center;
       margin-bottom: 3rem;
-      color: #5e3a2e;
+      color: #5e2a6b;
       position: relative;
     }
     .section-title:after {
@@ -160,7 +162,7 @@
       display: block;
       width: 80px;
       height: 4px;
-      background: #F4A261;
+      background: #D4AF37;
       margin: 12px auto 0;
       border-radius: 4px;
     }
@@ -175,24 +177,25 @@
       background: white;
       border-radius: 28px;
       padding: 1.8rem;
-      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.05);
+      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
       transition: all 0.25s;
-      border: 1px solid #ffefdf;
+      border: 1px solid #f3e5ff;
     }
     .massage-card i {
       font-size: 2.5rem;
-      color: #E76F51;
+      color: #9B59B6;
       margin-bottom: 1rem;
     }
     .massage-card h3 {
       font-size: 1.7rem;
       margin-bottom: 0.75rem;
+      color: #4a2b52;
     }
     .massage-card p {
-      color: #4a3a32;
+      color: #4a3a44;
     }
 
-    /* gallery (images martha1.. etc) */
+    /* gallery (images) */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -205,9 +208,11 @@
       border-radius: 20px;
       transition: 0.2s ease;
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      border: 2px solid #f2e6c9;
     }
     .gallery-grid img:hover {
       transform: scale(1.02);
+      border-color: #D4AF37;
     }
 
     /* therapists row */
@@ -218,12 +223,13 @@
       justify-content: center;
     }
     .therapist-card {
-      background: #fff9f2;
+      background: #fffaf5;
       border-radius: 32px;
       width: 240px;
       text-align: center;
       padding: 1rem 1rem 1.5rem;
       box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+      transition: 0.2s;
     }
     .therapist-card img {
       width: 160px;
@@ -231,10 +237,11 @@
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 1rem;
-      border: 4px solid #F4A261;
+      border: 4px solid #D4AF37;
     }
     .therapist-card h4 {
       font-size: 1.3rem;
+      color: #5e2a6b;
     }
 
     /* Video montage */
@@ -256,6 +263,7 @@
       margin: 0 auto 2rem;
       border-radius: 28px;
       overflow: hidden;
+      box-shadow: 0 16px 28px rgba(0,0,0,0.1);
     }
     .main-video video {
       width: 100%;
@@ -269,15 +277,16 @@
       gap: 2.5rem;
     }
     .contact-form {
-      background: #fff5ec;
+      background: #faf3ff;
       padding: 2rem;
       border-radius: 32px;
+      border: 1px solid #eedbff;
     }
     .contact-form input, .contact-form textarea {
       width: 100%;
       padding: 14px 18px;
       margin-bottom: 1rem;
-      border: 1px solid #f0dbc9;
+      border: 1px solid #ddc8f0;
       border-radius: 60px;
       font-family: inherit;
       background: white;
@@ -286,11 +295,19 @@
       border-radius: 28px;
       resize: vertical;
     }
+    .contact-form button {
+      background: #9B59B6;
+    }
+    .contact-form button:hover {
+      background: #D4AF37;
+      color: #2e1e2c;
+    }
     .map-container {
       border-radius: 32px;
       overflow: hidden;
       height: 350px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      border: 2px solid #D4AF37;
     }
     #liveMap {
       height: 100%;
@@ -298,17 +315,22 @@
     }
     .address-block {
       margin-top: 1rem;
-      background: #f7ede4;
+      background: #f9f0ff;
       padding: 1rem;
       border-radius: 28px;
       text-align: center;
+      color: #3b1e40;
+    }
+    .address-block i {
+      color: #9B59B6;
     }
 
-    /* footer */
+    /* footer gold/purple */
     footer {
-      background: #1f1814;
-      color: #ddcbbc;
+      background: #251c2a;
+      color: #eedfcf;
       padding: 40px 0 20px;
+      border-top: 2px solid #D4AF37;
     }
     .footer-content {
       display: flex;
@@ -318,13 +340,13 @@
       align-items: center;
     }
     .social-links a {
-      color: #F4A261;
+      color: #D4AF37;
       font-size: 1.8rem;
       margin: 0 10px;
       transition: 0.2s;
     }
     .social-links a:hover {
-      color: #e9b47c;
+      color: #f3e5ab;
     }
 
     @keyframes fadeInUp {
@@ -344,7 +366,7 @@
         display: none;
         flex-direction: column;
         width: 100%;
-        background: rgba(30,20,15,0.95);
+        background: rgba(46, 25, 48, 0.97);
         padding: 20px;
         border-radius: 20px;
         margin-top: 16px;
@@ -375,15 +397,15 @@
       }
     }
 
-    /* nails disabled note (no nails) */
+    /* no nails note with gold/purple */
     .no-nails-note {
-      background: #ffefe3;
-      border-left: 6px solid #E76F51;
+      background: #f6edfe;
+      border-left: 6px solid #D4AF37;
       padding: 0.6rem 1.2rem;
       border-radius: 40px;
       text-align: center;
-      margin-bottom: 2rem;
       font-weight: 500;
+      color: #4a2b52;
     }
   </style>
 </head>
@@ -464,7 +486,7 @@
     </div>
   </section>
 
-  <!-- Gallery Images: marth1.jpg, marth2.jpg ... to martha7.jpg, plus martha5.webp only -->
+  <!-- Gallery Images: marth1.jpg, marth2.jpg ... to martha7.jpg, plus martha5.webp -->
   <section id="gallery">
     <div class="container">
       <div class="section-title">Visual Serenity</div>
@@ -472,14 +494,14 @@
         <i class="fas fa-hand-sparkles"></i> No Nail Services — Pure focus on therapeutic massage & wellness.
       </div>
       <div class="gallery-grid">
-        <img src="marth1.jpg" alt="Spa atmosphere" onerror="this.src='https://placehold.co/400x300/f7ede4/5e3a2e?text=Martha1'">
-        <img src="marth2.jpg" alt="Massage session" onerror="this.src='https://placehold.co/400x300/f7ede4/5e3a2e?text=Martha2'">
-        <img src="marth3.jpg" alt="Hot stones moment" onerror="this.src='https://placehold.co/400x300/f7ede4/5e3a2e?text=Martha3'">
-        <img src="marth4.jpg" alt="Aromatherapy" onerror="this.src='https://placehold.co/400x300/f7ede4/5e3a2e?text=Martha4'">
+        <img src="marth1.jpg" alt="Spa atmosphere" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha1'">
+        <img src="marth2.jpg" alt="Massage session" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha2'">
+        <img src="marth3.jpg" alt="Hot stones moment" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha3'">
+        <img src="marth4.jpg" alt="Aromatherapy" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha4'">
         <!-- martha5.webp (special) -->
-        <img src="martha5.webp" alt="Tranquil spa" onerror="this.src='https://placehold.co/400x300/f7ede4/5e3a2e?text=Martha5+WEBP'">
-        <img src="martha6.jpg" alt="Wellness room" onerror="this.src='https://placehold.co/400x300/f7ede4/5e3a2e?text=Martha6'">
-        <img src="martha7.jpg" alt="Relaxation area" onerror="this.src='https://placehold.co/400x300/f7ede4/5e3a2e?text=Martha7'">
+        <img src="martha5.webp" alt="Tranquil spa" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha5+WEBP'">
+        <img src="martha6.jpg" alt="Wellness room" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha6'">
+        <img src="martha7.jpg" alt="Relaxation area" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha7'">
       </div>
     </div>
   </section>
@@ -489,10 +511,10 @@
     <div class="container">
       <div class="section-title">Our Healing Hands</div>
       <div class="therapists-row">
-        <div class="therapist-card"><img src="martha8.jpeg" alt="Therapist 1" onerror="this.src='https://placehold.co/200x200/f3e3d5/8b5a3c?text=Martha8'"><h4>Elena N.</h4><p>Deep Tissue Expert</p></div>
-        <div class="therapist-card"><img src="Marth9.jpeg" alt="Therapist 2" onerror="this.src='https://placehold.co/200x200/f3e3d5/8b5a3c?text=Martha9'"><h4>Samuel K.</h4><p>Thai & Stretch</p></div>
-        <div class="therapist-card"><img src="martha10.jpeg" alt="Therapist 3" onerror="this.src='https://placehold.co/200x200/f3e3d5/8b5a3c?text=Martha10'"><h4>Lerato M.</h4><p>Aroma & Hot Stone</p></div>
-        <div class="therapist-card"><img src="martha11.jpeg" alt="Therapist 4" onerror="this.src='https://placehold.co/200x200/f3e3d5/8b5a3c?text=Martha11'"><h4>Priya D.</h4><p>Trigger Point Therapy</p></div>
+        <div class="therapist-card"><img src="martha8.jpeg" alt="Therapist 1" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha8'"><h4>Elena N.</h4><p>Deep Tissue Expert</p></div>
+        <div class="therapist-card"><img src="Marth9.jpeg" alt="Therapist 2" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha9'"><h4>Samuel K.</h4><p>Thai & Stretch</p></div>
+        <div class="therapist-card"><img src="martha10.jpeg" alt="Therapist 3" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha10'"><h4>Lerato M.</h4><p>Aroma & Hot Stone</p></div>
+        <div class="therapist-card"><img src="martha11.jpeg" alt="Therapist 4" onerror="this.src='https://placehold.co/200x200/f1e6fc/9B59B6?text=Martha11'"><h4>Priya D.</h4><p>Trigger Point Therapy</p></div>
       </div>
     </div>
   </section>
@@ -520,7 +542,7 @@
       <div class="section-title">Reach Serenity</div>
       <div class="contact-map">
         <div class="contact-form">
-          <h3 style="margin-bottom: 1rem;">Book or Inquire <i class="fab fa-whatsapp" style="color:#25D366;"></i></h3>
+          <h3 style="margin-bottom: 1rem; color:#5e2a6b;">Book or Inquire <i class="fab fa-whatsapp" style="color:#25D366;"></i></h3>
           <form id="whatsappForm">
             <input type="text" id="name" placeholder="Your name" required>
             <input type="email" id="email" placeholder="Email address">
@@ -534,7 +556,7 @@
             <div id="liveMap"></div>
           </div>
           <div class="address-block">
-            <i class="fas fa-location-dot" style="color:#E76F51;"></i> <strong>86 Windermore Drive, Benoni, South Africa</strong><br>
+            <i class="fas fa-location-dot" style="color:#9B59B6;"></i> <strong>86 Windermore Drive, Benoni, South Africa</strong><br>
             <i class="fas fa-phone-alt"></i> +27 71 170 5909 (WhatsApp)
           </div>
         </div>
@@ -570,7 +592,6 @@
   });
 
   // Initialize Live Map (Benoni, 86 Windermore Drive)
-  // Coordinates for Benoni (approx -26.1885, 28.3205 fine-tuned to Windermore Dr)
   const addressLat = -26.1772;
   const addressLng = 28.3116;
   const map = L.map('liveMap').setView([addressLat, addressLng], 15);
@@ -579,11 +600,17 @@
     subdomains: 'abcd',
     maxZoom: 19
   }).addTo(map);
-  L.marker([addressLat, addressLng]).addTo(map)
-    .bindPopup('<b>The Fiery Falcon Wellness Spa</b><br/>86 Windermore Drive, Benoni')
+  // Gold-purple custom marker? default is fine but we add icon color twist
+  const goldIcon = L.divIcon({
+    html: '<i class="fas fa-crown" style="color:#D4AF37; font-size:28px; text-shadow:0 0 3px #5e2a6b;"></i>',
+    iconSize: [30, 30],
+    className: 'custom-gold-marker'
+  });
+  L.marker([addressLat, addressLng], { icon: goldIcon }).addTo(map)
+    .bindPopup('<b style="color:#9B59B6;">🔥 The Fiery Falcon Wellness Spa</b><br/>86 Windermore Drive, Benoni')
     .openPopup();
 
-  // WhatsApp form handler -> sends to number 27711705909 (South Africa)
+  // WhatsApp form handler -> sends to number 27711705909
   const form = document.getElementById('whatsappForm');
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -600,32 +627,18 @@
     if (email) fullMessage += `*Email:* ${email}%0A`;
     if (phone) fullMessage += `*Phone:* ${phone}%0A`;
     fullMessage += `*Message:* ${messageText || "I would like to book a massage or get more info."}%0A%0AThanks!`;
-    const whatsappNumber = "27711705909"; // without + for international format
+    const whatsappNumber = "27711705909";
     const url = `https://wa.me/${whatsappNumber}?text=${fullMessage}`;
     window.open(url, '_blank');
   });
 
-  // Fallback for hero video if martha.mp4 missing (but it's assumed present)
-  const heroVideo = document.getElementById('heroVideo');
-  if (heroVideo) {
-    heroVideo.addEventListener('error', () => {
-      console.log("Hero video fallback if missing");
-    });
-  }
-
-  // For videos in montage error placeholders not needed, just display.
-  // No nails mention already included.
-  // Animation characters subtle (CSS animation present)
-  // Also handle responsive resizing map on tab
+  // Ensure map resizes properly on window resize
   window.addEventListener('resize', () => {
     setTimeout(() => { map.invalidateSize(); }, 200);
   });
-  // minor fix for map container after load
   setTimeout(() => { map.invalidateSize(); }, 400);
+  
+  // small fix for missing images fallback (all requested images still referenced)
 </script>
-
-<!-- Additional note: All images/videos paths are as requested; placeholder fallback for missing media, 
-     To ensure modern feel: mobile responsive, animation via fadeIn, hero video background. 
-     All massage descriptions fully detailed. -->
 </body>
 </html>
