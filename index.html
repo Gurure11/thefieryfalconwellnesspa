@@ -232,12 +232,29 @@
       transition: 0.2s;
     }
     .therapist-card img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
+      width: 190px;
+      height: 190px;
+      border-radius: 18px;
       object-fit: cover;
       margin-bottom: 1rem;
       border: 4px solid #D4AF37;
+    }
+    .flyer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.2rem;
+      align-items: start;
+      margin-bottom: 1.5rem;
+    }
+    .flyer-grid img {
+      width: 100%;
+      height: auto;
+      max-height: none;
+      object-fit: contain;
+      border-radius: 20px;
+      background: #080808;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      border: 2px solid #D4AF37;
     }
     .therapist-card h4 {
       font-size: 1.3rem;
@@ -492,9 +509,10 @@
       <div class="section-title">Visual Serenity</div>
       <div class="no-nails-note">
         <i class="fas fa-hand-sparkles"></i> <p>We do nails plus — Pure focus on therapeutic massage & wellness.</p><br>
-        <div class="gallery-grid">
-        <img src="nails.jpeg" alt="Spa atmosphere" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha1'">
-      </div>
+        <div class="flyer-grid">
+          <img src="nails.jpeg" alt="Nail care price list flyer" onerror="this.src='https://placehold.co/600x900/f3eaf8/9B59B6?text=Nails+Flyer'">
+          <img src="martha13.jpg" alt="The Fiery Falcon Wellness Spa services flyer" onerror="this.src='https://placehold.co/600x900/f3eaf8/9B59B6?text=Spa+Flyer'">
+        </div>
       <div class="gallery-grid">
         <img src="martha1.jpg" alt="Spa atmosphere" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha1'">
         <img src="martha2.jpg" alt="Massage session" onerror="this.src='https://placehold.co/400x300/f3eaf8/9B59B6?text=Martha2'">
@@ -532,7 +550,6 @@
       </div>
       <div class="video-montage">
         <video controls src="mart1.mp4" muted></video>
-        
       </div>
     </div>
   </section>
@@ -570,7 +587,7 @@
   <div class="container footer-content">
     <div>
       <h3>🔥 The Fiery Falcon Wellness Spa</h3>
-      <p>Over a decade of authentic healing • Benoni's premium sanctuary</p>
+      <p>Over a decade of authentic healing • Benoni's premium sanctuary - Call us on 27 69 951 2154</p>
       <p>© 2026 — All about tranquility</p>
     </div>
     <div class="social-links">
